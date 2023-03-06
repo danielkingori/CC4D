@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Freelancer v7.0.6 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2022 Start Bootstrap
+* Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
 */
 /*!
@@ -11431,6 +11431,12 @@ html {
 }
 
 .masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: linear-gradient(to bottom, rgba(255, 235, 0, 0.45) 0%, rgba(255, 235, 0, 0.35) 100%), url(../assets/img/masthead-bg.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
 }
@@ -11447,6 +11453,12 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(to bottom, rgba(255, 235, 0, 0.45) 0%, rgba(255, 235, 0, 0.35) 100%), url(../assets/img/masthead-bg.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }

@@ -1,291 +1,366 @@
 doctype html
-html(lang='en')
-
-    head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Freelancer - Start Bootstrap Theme
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js', crossorigin='anonymous')
-
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
-
-    body#page-top
-
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
-            .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
-                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu 
-                    i.fas.fa-bars
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.ms-auto
-                        li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') Portfolio
-                        li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
-                        li.nav-item.mx-0.mx-lg-1
-                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
-
-        // Masthead
-        header.masthead.bg-primary.text-white.text-center
-            .container.d-flex.align-items-center.flex-column
-                // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
-                // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
-                // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
-
-        // Portfolio Section
-        section#portfolio.page-section.portfolio
-            .container
-                // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
-                // Icon Divider
-                .divider-custom
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Portfolio Grid Items
-                .row.justify-content-center
-                    // Portfolio Item 1
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
-                    // Portfolio Item 2
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
-                    // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
-                    // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
-
-        // About Section
-        section#about.page-section.bg-primary.text-white.mb-0
-            .container
-                // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
-                // Icon Divider
-                .divider-custom.divider-light
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // About Section Content
-                .row
-                    .col-lg-4.ms-auto
-                        p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
-                    .col-lg-4.me-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
-
-        // Contact Section
-        section#contact.page-section
-            .container
-                // Contact Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
-                // Icon Divider
-                .divider-custom
-                    .divider-custom-line
-                    .divider-custom-icon
-                        i.fas.fa-star
-                    .divider-custom-line
-                // Contact Section Form
-                .row.justify-content-center
-                    .col-lg-8.col-xl-7
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
-
-                            // Name input
-                            .form-floating.mb-3
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Enter your name...',
-                                    data-sb-validations='required'
-                                )
-                                label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            // Email address input
-                            .form-floating.mb-3
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='name@example.com',
-                                    data-sb-validations='required,email'
-                                )
-                                label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            // Phone number input
-                            .form-floating.mb-3
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
-                                )
-                                label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                            // Message input
-                            .form-floating.mb-3
-                                textarea#message.form-control(
-                                    type='text',
-                                    placeholder='Enter your message here...',
-                                    style='height: 10rem;',
-                                    data-sb-validations='required'
-                                )
-                                label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
-
-                            // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
-
-        // Footer
-        footer.footer.text-center
-            .container
-                .row
-                    // Footer Location
-                    .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Location
-                        p.lead.mb-0
-                            | 2215 John Daniel Drive
-                            br
-                            | Clark, MO 65243
-                    // Footer Social Icons
-                    .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
-                    // Footer About Text
-                    .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
-                        p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
-
-        // Copyright Section
-        div.copyright.py-4.text-center.text-white
-            .container
-                small Copyright &copy; Your Website 2022
-
-        // Portfolio Modals
-        include includes/portfolio-modal-1.pug
-        include includes/portfolio-modal-2.pug
-        include includes/portfolio-modal-3.pug
-        include includes/portfolio-modal-4.pug
-        include includes/portfolio-modal-5.pug
-        include includes/portfolio-modal-6.pug
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  title CC4D - Bootstrap Freelancer Theme
+  // Favicon
+  link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+  // Font Awesome icons (free version)
+  script(src='https://use.fontawesome.com/releases/v6.1.0/js/all.js' crossorigin='anonymous')
+  // Google fonts
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css')
+  // Core theme CSS (includes Bootstrap)
+  link(href='css/styles.css' rel='stylesheet')
+// Navigation
+nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+  .container
+    a.navbar-brand(href='#page-top')
+      img(src='assets/img/cc4d-square-logo-transparent.png' width='75' alt='CC4D')
+    button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button' data-bs-toggle='collapse' data-bs-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+      | Menu
+      i.fas.fa-bars
+    #navbarResponsive.collapse.navbar-collapse
+      | &cedil;
+      ul.navbar-nav.ms-auto
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded(href='#partners') Partners
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded(href='#focus') Focus
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded(href='#mission') Mission
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded(href='#vision') Vision
+        li.nav-item.mx-0.mx-lg-1
+          a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
+// Masthead
+header.masthead.text-secondary.text-center
+  .container.px-4.px-lg-5.h-100
+    .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
+      .col-lg-8.align-self-end
+        // Masthead Heading
+        h1.masthead-heading.text-uppercase.mb-0 Community Creativity 4 Development
+        // Icon Divider
+        .divider-custom.divider-dark
+          .divider-custom-line
+          .divider-custom-icon
+            i.fas.fa-star
+          .divider-custom-line
+      .col-lg-8.align-self-baseline
+        // Masthead Subheading
+        p.masthead-subheading.font-weight-light.mb-0
+          | Connecting communities while finding solutions to protect the environment from global warming.
+// About Section
+section#about.page-section.bg-primary.text-white.mb-0
+  .container
+    // About Section Heading
+    h2.page-section-heading.text-center.text-uppercase.text-white About Us
+    // Icon Divider
+    .divider-custom.divider-light
+      .divider-custom-line
+      .divider-custom-icon
+        i.fas.fa-star
+      .divider-custom-line
+    // About Section Content
+    p.lead
+      | Community Creativity for Development (CC4D) is a Youth-led community-based organization formed in August 2019 by a group of South Sudanese Refugee Youth professionals who saw a gap in repair, reuse and maintenance of Electronics with its headquarters in Eden II, Rhino Camp. CC4D aims at connecting communities while also finding solutions to protect the environment from global warming. We connect communities through organizing repair caf&eacute; events which are vital in building and promoting peace and peaceful coexistence among conflict affected communities. CC4D is implementing Co-funded Electronic waste management project through
+      a.text-decoration-none.text-warning(href='https://www.youtube.com/watch?v=40Y4pxb-BDY&ab_channel=CommunityCreativity4Development' target='_blank' rel='noopener noreferrer') repair caf&eacute; events
+      |             (mobile repairs and maintenance of electronics) mobile digital literacy skills training programs, ICT mentorship for women and girls. CC4D is a member of the
+      a.text-decoration-none.text-warning(href='https://asknet.community/' target='_blank' rel='noopener noreferrer') #ASKnet community
+      |             (Access to Skills Knowledge and Network),
+      a.text-decoration-none.text-warning(href='https://globalinnovationgathering.org/' target='_blank' rel='noopener noreferrer') Global Innovation Gathering
+      |             (GIG),
+      a.text-decoration-none.text-warning(href='https://africaosh.com/' target='_blank' rel='noopener noreferrer') Africa Open Science Hardware
+      |             (AfricaOSH),
+      a.text-decoration-none.text-warning(href='https://africamakerspace.net/' target='_blank' rel='noopener noreferrer') Africa Makers Space Network
+      |             ,
+      a.text-decoration-none.text-warning(href='https://talk.restarters.net/' target='_blank' rel='noopener noreferrer') Restarters community
+      |             and
+      a.text-decoration-none.text-warning(href='https://forum.openhardware.science/' target='_blank' rel='noopener noreferrer') the Global Open Science Hardware
+      |             (GOSH).
+    p.lead
+      | CC4D, an award winner of the Job Security And Financial Services Category in the 2021 online EU: AFRICA THE JOURNEY HACKATHON organized and hosted by
+      a.text-decoration-none.text-warning(href='https://www.garage48.org/blog/eu-africa-the-journey-2021' target='_blank' rel='noopener noreferrer') Garage48
+      |             in Estonia Technology and the Environment 4 possesses considerable expertise in the areas including Environment and Digital competence skills trainings, Sustainable Peace, youth empowerment and livelihood support with experienced staff working with the communities for over 4 years in Rhino Camp Refugee Settlement. CC4D has over time established a strong board structure that defines her strategic direction.
+// Partners Section
+section#partners.page-section.portfolio
+  .container
+    // Portfolio Section Heading
+    h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Our Partners
+    // Icon Divider
+    .divider-custom
+      .divider-custom-line
+      .divider-custom-icon
+        i.fas.fa-star
+      .divider-custom-line
+    // Portfolio Grid Items
+    .row.justify-content-center
+      // Portfolio Item 1
+      .col-md-6.col-lg-4.mb-5
+        .portfolio-item.mx-auto(data-bs-toggle='modal' data-bs-target='#portfolioModal1')
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='assets/img/portfolio/r0g.png' alt='...')
+      // Partners Item 2
+      .col-md-6.col-lg-4.mb-5
+        .portfolio-item.mx-auto(data-bs-toggle='modal' data-bs-target='#portfolioModal2')
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='assets/img/portfolio/ifixit.png' alt='...')
+      // Portfolio Item 3
+      .col-md-6.col-lg-4.mb-5
+        .portfolio-item.mx-auto(data-bs-toggle='modal' data-bs-target='#portfolioModal3')
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='assets/img/portfolio/The-Restart-Project.png' alt='...')
+      // Portfolio Item 4
+      .col-md-6.col-lg-4.mb-5.mb-lg-0
+        .portfolio-item.mx-auto(data-bs-toggle='modal' data-bs-target='#portfolioModal4')
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='assets/img/portfolio/Repair-Cafe-Malmo.png' alt='...')
+      // Portfolio Item 5
+      .col-md-6.col-lg-4.mb-5.mb-md-0
+        .portfolio-item.mx-auto(data-bs-toggle='modal' data-bs-target='#portfolioModal5')
+          .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
+            .portfolio-item-caption-content.text-center.text-white
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='assets/img/portfolio/Shuttleworth.png' alt='...')
+// Combined Mission, Activities, and Values secttion
+section#focus.page-section.bg-primary.text-white.mb-0
+  .container
+    .row.justify-content-center
+      // Activities
+      .col-md-4.col-lg-4.mb-5
+        .col.mb-4
+          img.img-fluid(src='assets/img/activities-mission-vision/activities.JPG')
+        .col
+          // Acitivities Section Heading
+          h3.page-section-heading.text-center.text-uppercase.text-white Activities Header
+          // Icon Divider
+          .divider-custom.divider-light
+            .divider-custom-line
+            .divider-custom-icon
+              i.fas.fa-star
+            .divider-custom-line
+          // Acitivites Section Content
+          p.lead.text-center Activities text
+      // Mission
+      .col-md-4.col-lg-4.mb-5
+        .col.mb-4
+          img.img-fluid(src='assets/img/activities-mission-vision/mission.JPG')
+        .col
+          // Mission Section Heading
+          h3.page-section-heading.text-center.text-uppercase.text-white Our Mission
+          // Icon Divider
+          .divider-custom.divider-light
+            .divider-custom-line
+            .divider-custom-icon
+              i.fas.fa-star
+            .divider-custom-line
+          // Mission Section Content
+          p.lead
+            | Our mission is to connect communities digitally, while protecting the environment from global warming by using the available resources for self-reliance and sustainable development.
+      // Vision
+      .col-md-4.col-lg-4.mb-5
+        .col.mb-4
+          img.img-fluid(src='assets/img/activities-mission-vision/vision.JPG')
+        .col
+          // Vision Section Heading
+          h3.page-section-heading.text-center.text-uppercase Our Vision
+          // Icon Divider
+          .divider-custom.divider-light
+            .divider-custom-line
+            .divider-custom-icon
+              i.fas.fa-star
+            .divider-custom-line
+          // Vision Section Content
+          p.lead
+            | A transformed and committed society fully in control of their social economic well-being using the available resources to reduce poverty, building peaceful and prosperous communities.
+hr.hr
+// Mission Section
+section#mission.page-section.bg-primary.text-white.mb-0
+  .container
+    .col
+      // Mission Section Heading
+      h2.page-section-heading.text-center.text-uppercase.text-white Our Mission
+      // Icon Divider
+      .divider-custom.divider-light
+        .divider-custom-line
+        .divider-custom-icon
+          i.fas.fa-star
+        .divider-custom-line
+      // Mission Section Content
+      p.lead
+        | Our mission is to connect communities digitally, while protecting the environment from global warming by using the available resources for self-reliance and sustainable development.
+// Vision Section
+section#vision.page-section
+  .container
+    .col
+    // Vision Section Heading
+    h2.page-section-heading.text-center.text-uppercase Our Vision
+    // Icon Divider
+    .divider-custom.divider
+      .divider-custom-line
+      .divider-custom-icon
+        i.fas.fa-star
+      .divider-custom-line
+    // Vision Section Content
+    p.lead
+      | A transformed and committed society fully in control of their social economic well-being using the available resources to reduce poverty, building peaceful and prosperous communities.
+// Blog Section
+// Donate Section
+// Contact Section
+section#contact.page-section.bg-primary.text-white
+  .container
+    // Contact Section Heading
+    h2.page-section-heading.text-center.text-uppercase.text-white.mb-0 Contact Us
+    // Icon Divider
+    .divider-custom.divider-light
+      .divider-custom-line
+      .divider-custom-icon
+        i.fas.fa-star
+      .divider-custom-line
+    // Contact Icons
+    .row.justify-content-start
+      .col-md-6.col-lg-4
+        h3.lead
+          i.fab.fa-fw.fa-telegram(style='font-size: 22px')
+          |                     +256-754937311
+      .col-md-6.col-lg-4
+        h3.lead
+          i.fab.fa.fa-phone-square(style='font-size: 22px')
+          |                     +256-754937311
+      .col-md-6.col-lg-4
+        h3.lead
+          i.fab.fa.fa-envelope(style='font-size: 22px')
+          a.text-decoration-none.text-white(href='mailto:info@cc4duganda.org') info@cc4duganda.org
+// Footer
+footer.footer.text-center
+  .container
+    .row
+      // Footer Social Icons
+      .col
+        h4.text-uppercase.mb-4 Find us on
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.facebook.com/CC4D.Uganda' target='_blank' rel='noopener noreferrer')
+          i.fab.fa-fw.fa-facebook-f
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://twitter.com/comcreative4d' target='_blank' rel='noopener noreferrer')
+          i.fab.fa-fw.fa-twitter
+        // <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+        a.btn.btn-outline-light.btn-social.mx-1(href='https://www.youtube.com/@communitycreativity4develo425' target='_blank' rel='noopener noreferrer')
+          i.fab.fa-fw.fa-youtube
+// Copyright Section
+.copyright.py-4.text-center.text-white
+  .container
+    small
+      | &copy; Community Creativity 4 Development 2023 &mdash; Theme by
+      a.text-decoration-none.text-white(href='https://themes.getbootstrap.com/' target='_blank' rel='noopener noreferrer') Bootstrap
+// Portfolio Modals
+// Portfolio Modal 1
+#portfolioModal1.portfolio-modal.modal.fade(tabindex='-1' aria-labelledby='portfolioModal1' aria-hidden='true')
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/r0g.png' alt='...')
+              // Portfolio Modal - Text
+              p.mb-4.text-start
+                a.text-decoration-none.text-info(href='https://openculture.agency/' target='_blank' rel='noopener noreferrer') r0g_agency
+                |                                 is a non profit that&apos;s goal is to promote open, innovative, and peaceful societies through programs that focus on open tech, open knowledge, and peacebuilding activities.
+              button.btn.btn-primary(data-bs-dismiss='modal')
+                i.fas.fa-xmark.fa-fw
+                |                                 Close Window
+// Portfolio Modal 2
+#portfolioModal2.portfolio-modal.modal.fade(tabindex='-1' aria-labelledby='portfolioModal2' aria-hidden='true')
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/ifixit.png' alt='...')
+              // Portfolio Modal - Text
+              p.mb-4.text-start
+                a.text-decoration-none.text-info(href='https://www.ifixit.com/' target='_blank' rel='noopener noreferrer') iFixit
+                |                                 is a collaborative effort spanning thousands of fixers, repair-seekers, and translators. Their mission is to teach everyone to fix every thing.
+              button.btn.btn-primary(data-bs-dismiss='modal')
+                i.fas.fa-xmark.fa-fw
+                |                                 Close Window
+// Portfolio Modal 3
+#portfolioModal3.portfolio-modal.modal.fade(tabindex='-1' aria-labelledby='portfolioModal3' aria-hidden='true')
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/The-Restart-Project.png' alt='...')
+              // Portfolio Modal - Text
+              p.mb-4.text-start
+                a.text-decoration-none.text-info(href='https://therestartproject.org/' target='_blank' rel='noopener noreferrer') The Restart Project
+                |                                 is a people-powered social enterprise that aims to fix our relationship with electronics. They help people learn how to repair their broken electronics, and rethink how they consume them in the first place.
+              button.btn.btn-primary(data-bs-dismiss='modal')
+                i.fas.fa-xmark.fa-fw
+                |                                 Close Window
+// Portfolio Modal 4
+#portfolioModal4.portfolio-modal.modal.fade(tabindex='-1' aria-labelledby='portfolioModal4' aria-hidden='true')
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/Repair-Cafe-Malmo.png' alt='...')
+              // Portfolio Modal - Text
+              p.mb-4.text-start
+                a.text-decoration-none.text-info(href='https://www.repaircafe.nu/' target='_blank' rel='noopener noreferrer') Repair Caf&eacute; Malm&ouml;
+                |                                 are a loose community of people that wants to help reducing the amount of electronic waste, loves to fix things and help others in doing that.
+              button.btn.btn-primary(data-bs-dismiss='modal')
+                i.fas.fa-xmark.fa-fw
+                |                                 Close Window
+// Portfolio Modal 5
+#portfolioModal5.portfolio-modal.modal.fade(tabindex='-1' aria-labelledby='portfolioModal5' aria-hidden='true')
+  .modal-dialog.modal-xl
+    .modal-content
+      .modal-header.border-0
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body.text-center.pb-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5(src='assets/img/portfolio/Shuttleworth.png' alt='...')
+              // Portfolio Modal - Text
+              p.mb-4.text-start
+                a.text-decoration-none.text-info(href='https://shuttleworthfoundation.org/' target='_blank' rel='noopener noreferrer') The Shuttleworth Foundation
+                |                                 is a small social investor that provides funding to dynamic leaders who are at the forefront of social change. They look for social innovators who are helping to change the world for the better and could benefit from a social investment model with a difference.
+              button.btn.btn-primary(data-bs-dismiss='modal')
+                i.fas.fa-xmark.fa-fw
+                |                                 Close Window
+// Bootstrap core JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+// Core theme JS
+script(src='js/scripts.js')
+script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
