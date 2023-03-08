@@ -25,7 +25,7 @@
     ],
     "homepage": "https://startbootstrap.com/theme/freelancer",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-freelancer/issues",
+        "url": "https://github.com/mrponuk/CC4D/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -35,7 +35,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-freelancer.git"
+        "url": "https://github.com/mrponuk/CC4D.git"
     },
     "dependencies": {
         "bootstrap": "5.1.3"
